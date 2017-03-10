@@ -1,0 +1,276 @@
+/* Globals */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/riverwp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div.container {
+  width: 90%;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-align: center;
+}
+
+div.portfolio {
+  width: 95%;
+}
+
+div.page {
+  text-align: center;
+}
+
+
+/* Global Styling for Pages */
+.page {
+    bottom: 0;
+    padding-top: 200px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.page h1 {
+  font-size: 60px;
+  z-index: -1;
+}
+
+/* Specific page styling */
+.page-home      {
+  background: transparent;
+  color:#00907c;
+}
+
+.page-about     {
+  background: transparent;
+  color:#a55400;
+}
+
+.page-contact   {
+  background: transparent;
+  color:#9e0000;
+}
+
+.page-portfolio {
+  background: transparent;
+  color:#9e0000;
+}
+
+.page-project {
+  background: transparent;
+  color:#9e0000;
+}
+
+/* Header Styling */
+header {
+  border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+header nav ul, header nav ul a {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+header nav ul li, header nav ul a {
+  float: left;
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 5px;
+  font-family: 'Cinzel', serif;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+}
+
+ul#navList {
+  margin-bottom: 5px;
+}
+
+#portfolioHeader, #projectHeader, #aboutHeader {
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+/* Welcome Page Styling */
+div.welcomeStatement {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+div.welcomeStatement h1 {
+  font-size: 32px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 5px;
+}
+
+div.welcomeStatement h2 {
+  font-size: 18px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 5px;
+}
+
+/* About Page Styling */
+span.infoSpan {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+}
+section.imgContainer {
+  width: 25%;
+  float: left;
+  margin-left: 10%;
+}
+
+section.aboutContent {
+  width: 40%;
+  float: right;
+  margin-right: 10%;
+  font-size: 24px;
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+section.aboutContent h1 {
+  font-size: 60px;
+}
+
+section.imgContainer {
+  display: inline;
+  margin-top: 5%;
+}
+
+img#personalImage {;
+  border-radius: 60%;
+  width: 100%;
+  min-width: 200px;
+}
+
+/* Portfolio Page Styling */
+div.workContainer {
+  width: 30%;
+  height: 224px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  display: inline;
+  float: left;
+}
+
+#worksImage {
+  width: 95%;
+  height: 220px;
+}
+
+#worksImage:hover {
+  border: 2px solid white;
+}
+
+/* Project Styling */
+h2 {
+  color: white;
+}
+
+#viImage {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 20%;
+}
+
+/* Footer Styling */
+footer {
+  background: transparent;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer i.fa-3x {
+  display: inline;
+}
+
+footer .fa-3x {
+  margin: 2px;
+  color: white;
+}
+
+i:hover {
+  color: green;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  div.workContainer {
+    width: 40%;
+    min-width: 290px;
+    margin-left: 8%;
+    display: inline;
+    float: left;
+  }
+}
+
+@media (max-width: 660px) {
+  header nav ul li, header nav ul a {
+    float: none;
+    text-align: center;
+  }
+  div.container {
+    padding-top: 100px;
+  }
+  section.aboutContent p {
+    width: 172%;
+  }
+  section.aboutContent h1 {
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+  section.aboutContent {
+    float: left;
+    clear: left;
+    margin-left: 15%;
+    font-size: 1em;
+    text-align: center;
+  }
+  section.imgContainer {
+    margin-left: 20%;
+  }
+  div.workContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    display: block;
+    float: none;
+  }
+  span.rowSpan {
+    display: none;
+  }
+  #projectHeader {
+    font-size: 40px;
+  }
+}
